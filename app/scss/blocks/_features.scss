@@ -1,0 +1,74 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 850px;
+    position: relative;
+    background: url('../img/bg_mobile.png'), no-repeat;
+    background-size: cover;
+    
+    @media (min-width: $tabletmin-width){
+      min-height: 720px;
+      background: url('../img/bg_tablet.png'), no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-width: $desktopmin-width){
+      justify-content: center;
+      min-height: 820px;
+      background: url('../img/bg.png'), no-repeat;
+      background-size: cover;
+    }
+}   
+
+.features__wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.features__wrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 80%;
+    margin-bottom: 5vh;    
+    
+    @media (min-width: $desktopmin-width) {      
+      margin-bottom: 0;
+    }    
+}
+
+.features__heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 64px;
+    min-height: 100px;
+    text-transform: uppercase;
+    margin: 0;
+
+    @media (min-width: $desktopmin-width) {      
+        font-size: 48px;
+        min-height: 192px;
+    }
+}
+
+.features__slogan {
+    @include features-text();
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+
+     @media (min-width: $desktopmin-width) {   
+        min-height: 100px;
+    }
+
+    @media (min-width: $desktopmax-width) {      
+        font-size: 20px;        
+    }
+}
+
+.features__list {
+    @include features-text();
+    font-size: 16px;
+    font-weight: 400;
+}

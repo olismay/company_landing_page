@@ -1,0 +1,129 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    color: $white;
+    background-image: url('../img/map.png'),
+                      url('../img/rectangle.png');
+    background-repeat: no-repeat;    
+    background-size: cover;
+    min-height: 1450px;
+    
+    @media (min-width: $tabletmin-width) {
+        min-height: 1050px;
+    }
+
+   
+}
+
+.order__heading {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;  
+    padding-top: 2em;
+    
+    @media (min-width: $desktopmin-width) {
+        font-size: 2em;
+    }
+}
+
+.order__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: center;
+    min-height: 550px;      
+    width: 100%;  
+}
+
+.order__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    margin-bottom: 4vh;
+}
+
+.order__desc {
+    text-align: center;
+    width: 82%;
+}
+
+.order-step__desc {
+    text-align: center;
+    flex-basis: 20%;     
+}
+
+.order-step__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 80%;
+}
+
+.order-step__pics {
+    display: flex;
+    min-width: 80%;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    min-height: 700px;
+
+    @media(min-width: $tabletmin-width) {     
+      min-height: 190px;
+      flex-direction: row;   
+    }
+
+    @media(min-width: $desktopmin-width) {
+      min-height: 190px;
+      flex-direction: row;           
+    }
+}
+
+.order-step__list {
+     
+    @include list();
+
+    
+    @media (min-width: $mobilemin-width) {
+        display: none;
+    }
+
+    @media (min-width: $tabletmin-width) {
+        display: flex;
+        min-width: 80%;
+        justify-content: space-around;
+        font-size: 16px;
+        line-height: 20px;   
+        margin-top: 2vh;
+    }
+    
+    @media (min-width: $desktopmin-width) {    
+        display: flex;       
+        justify-content: space-around;
+        font-size: 16px;
+        line-height: 20px;   
+        margin-top: 2vh;
+        min-width: 80%;
+    }
+}
+
+.order-step__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.order-step__item--background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid $bg-border;
+    background: $highlight-color;
+}  

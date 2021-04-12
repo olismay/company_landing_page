@@ -1,0 +1,29 @@
+@mixin flexible() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin list() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin features-text() {
+    color: $main-content-color;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+@mixin button() {
+    display: block;
+    width: 183px;
+    height: 42px;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 0.33px;
+    border-radius: 4px;
+    cursor: pointer;
+}

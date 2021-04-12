@@ -1,0 +1,21 @@
+.highlight {
+    color: $highlight-color;
+}
+
+.highlight__list {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    color: $white;
+    width: 370px;
+    height: 45px;
+    background-color: transparent;
+}
+
+.highlight__item {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    color: $white;
+    width: 370px;
+    height: 45px;
+    background-color: $footer-color;
+} 

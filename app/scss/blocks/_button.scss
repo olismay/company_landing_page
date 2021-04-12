@@ -1,0 +1,49 @@
+.button__wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 2vh;
+    
+
+    @media (min-width: $tabletmin-width) {        
+        width: 65%;        
+        flex-direction: row;
+    }
+
+    @media (min-width: $desktopmin-width) {       
+        width: 45%;       
+    }
+
+    @media (min-width: $desktopmax-width) {       
+        width: 30%;       
+    }
+}
+
+.button--order {
+    @include button();
+    width: 145px;
+    color: $white;
+    margin-right: 2vw;
+    background-color: $highlight-color;
+    border: 1px solid $white;
+
+    @media (min-width: $mobilemax-width) {       
+        width: 183px;  
+    }
+
+    @media (min-width: $tabletmin-width) {       
+        margin-right: 0;
+    }
+}
+
+.button--desc {
+    @include button();
+    width: 145px;
+    color: $main-content-color;
+    background-color: $white;
+    border: 1px solid $border-color;
+
+    @media (min-width: $mobilemax-width) {       
+        width: 183px;       
+    }
+}
